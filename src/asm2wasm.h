@@ -1192,6 +1192,8 @@ void Asm2WasmBuilder::processAsm(Ref ast) {
     }
   }
 
+  addAddedFunctions(wasm);
+
   if (runOptimizationPasses) {
     optimizingBuilder->finish();
   }
